@@ -30,7 +30,8 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../dist')));
 
-app.post('/db/addUser', db.addUser);
+app.post('/db/user', db.addUser);
+app.delete('/db/user', db.deleteUser);
 
 app.listen(port, () => {
   console.log('app is listening on 8008');
