@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Panel, Grid, Row, Col } from 'react-bootstrap';
-import Property from './property.jsx';
+import Property from './Property.jsx';
 
 const PropertyList = ({ houseData, propertyList }) => {
   const list = propertyList.length ? propertyList : houseData;
